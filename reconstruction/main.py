@@ -64,6 +64,7 @@ torch.manual_seed(args.seed)
 cudnn.benchmark = False
 cudnn.deterministic = True
 
+# how obj data is transformed to graph data?
 # load dataset
 template_fp = osp.join(args.data_fp, 'template', 'template.obj')
 meshdata = MeshData(args.data_fp,
