@@ -1,0 +1,20 @@
+name: graph
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - pytorch
+  - numpy
+  - scipy
+  - scikit-learn
+  - openmesh
+  - tqdm
+  - pip
+  - pip: 
+      - torch-scatter
+      - torch-sparse
+      - torch-cluster
+      - torch-spline-conv
+      - torch-geometric==1.3.0
