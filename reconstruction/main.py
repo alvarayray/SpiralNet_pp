@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
 import torch_geometric.transforms as T
-from psbody.mesh import Mesh
+# from psbody.mesh import Mesh
 
 from reconstruction import AE, run, eval_error
 from datasets import MeshData
@@ -77,10 +77,12 @@ train_loader = DataLoader(meshdata.train_dataset,
 test_loader = DataLoader(meshdata.test_dataset, batch_size=args.batch_size)
 
 # generate/load transform matrices
+#TODO what is this transform matrices doing?
 transform_fp = osp.join(args.data_fp, 'transform.pkl')
 if not osp.exists(transform_fp):
     print('Generating transform matrices...')
     mesh = Mesh(filename=template_fp)
+    #TODO our template mesh?
     ds_factors = [4, 4, 4, 4]
     _, A, D, U, F, V = mesh_sampling.generate_transform_matrices(
         mesh, ds_factors)

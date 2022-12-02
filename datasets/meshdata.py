@@ -66,3 +66,4 @@ class MeshData(object):
     def save_mesh(self, fp, x):
         x = x * self.std + self.mean
         om.write_mesh(fp, om.TriMesh(x.numpy(), self.template_face))
+

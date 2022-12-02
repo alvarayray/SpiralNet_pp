@@ -9,6 +9,7 @@ from utils.read import read_mesh
 from tqdm import tqdm
 
 
+
 class CoMA(InMemoryDataset):
     url = 'https://coma.is.tue.mpg.de/'
 
@@ -106,4 +107,5 @@ class CoMA(InMemoryDataset):
                     ' found {}').format(self.split))
 
         torch.save(self.collate(train_data_list), self.processed_paths[0])
+        #TODO what is self.collate doing?
         torch.save(self.collate(test_data_list), self.processed_paths[1])
