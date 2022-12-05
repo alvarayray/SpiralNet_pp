@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
 import torch_geometric.transforms as T
-# from psbody.mesh import Mesh
+from psbody.mesh import Mesh
 
 from reconstruction import AE, run, eval_error
 from datasets import MeshData

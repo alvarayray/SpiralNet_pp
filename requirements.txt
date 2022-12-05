@@ -9,3 +9,10 @@ scikit-learn
 openmesh
 tqdm
 vtk
+-f https://data.pyg.org/whl/torch-1.12.0+cu102.html
+pyg-lib 
+torch-scatter 
+torch-sparse 
+torch-cluster 
+torch-spline-conv 
+torch-geometric 
