@@ -1,3 +1,4 @@
+clone from https://github.com/sw-gong/spiralnet_plus.git and made some modifications
 # SpiralNet++: A Fast and Highly Efficient Mesh Convolution Operator
 
 SpiralNet++ is a general-purpose deep neural network for fixed 3D triangular meshes, which can be used for tasks such as 3D shape correspondence, classification or reconstruction. The basic idea is to serialize the neighboring vertices based on triangular meshes, which allows the model to learn intrinsic geometric features from fusing local geometric structure information with vertex features in a straightforward manner. Essentially, if you are working on a task based on fixed triangular meshes (which is normally the case in terms of mesh reconstruction problems, where you can simply pre-define mesh connectivities), you will be surprised by the speed and the power gain with this elgant mesh convolution operator. 
